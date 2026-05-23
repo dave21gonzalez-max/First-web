@@ -2,21 +2,23 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Mi página con una imagen</title>
+  <title>Imagen completa</title>
   <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
     body {
       display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-      background-color: #f0f0f0;
+      justify-content: center;   /* Centra horizontalmente */
+      align-items: center;       /* Centra verticalmente */
+      background-color: #000;    /* Fondo negro opcional */
     }
     img {
-      max-width: 90%;
-      max-height: 90%;
-      border: 5px solid #333;
-      border-radius: 10px;
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;       /* Ajusta la imagen sin recortes */
     }
   </style>
 </head>
